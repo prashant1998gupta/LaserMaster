@@ -27,7 +27,12 @@ public class Testing : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        	Testing();
+	}
+	
+	void Testing()
+	{
+		if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Instantiator.dir = new Vector3(0, 1, 0);
             Instantiator.rot = new Vector3(-90, 0, 0);
@@ -95,4 +100,5 @@ public class Testing : MonoBehaviour {
             Instantiator.scale(TriangleDashed, Vector3.zero);
         }
 	}
+
 }
